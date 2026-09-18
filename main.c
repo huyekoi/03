@@ -2,12 +2,19 @@
 
 int main(void)
 {
-    char c;
+    int numerator;
+    int denominator;
+    float result;
 
-    printf("enter an character : ");
-    scanf("%c", &c);
+    printf("분자를 입력하세요 : ");
+    scanf("%d", &numerator);
 
-    printf("the next character of %c is %c\n", c, c + 1);
+    printf("분모를 입력하세요 : ");
+    scanf("%d", &denominator);
+
+    result = (float)numerator / denominator;
+
+    printf("나누기의 결과는 %f 입니다.\n", result);
 
     return 0;
 }
